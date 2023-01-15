@@ -1,0 +1,162 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* CSS Code for the Header.js Component */
+
+.menu{
+  height: 8vh;
+  box-shadow: rgba(0, 0, 0, 0.103) 0px 25px 20px -20px;
+  width: 100wh;
+  padding-top: .9rem;
+}
+.menu :nth-child(1){
+  text-align: center;
+  margin: auto;
+}
+
+/* CSS code for the Addcontact.js component */
+
+.main-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2.5rem;
+}
+.main-div h2{
+  font-weight: 900;
+  margin-bottom: .9rem;
+}
+.main-div > .myform{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 30vh;
+  width: 45vw;
+  padding: .2rem 1rem;
+}
+.main-div > .myform > .field > input{
+  height: 5vh;
+  width: 35vw;
+  padding: .5rem;
+  outline: none;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  margin: .2rem 0 1rem 0;
+}
+.main-div > .myform > .field > label{
+  font-size: 300;
+}
+.main-div > .myform .Addbutton {
+  height: 5vh;
+  width: 10vw;
+  margin-top: 1rem;
+  margin-left: 1.1rem;
+  cursor: pointer;
+  border: none;
+  background-color: rgba(44, 95, 224, 0.964);
+  color: #ffffff;
+  border-radius: .3rem;
+  font-size: 1rem;
+}
+
+/* CSS Code for responsiveness */
+
+@media screen and (max-width: 900px) 
+{
+  .main-div > .myform{
+   width: 50vw;
+  }
+}
+@media screen and (max-width: 600px) 
+{
+  .main-div > .myform{
+   width: 60vw;
+  }
+}
+@media screen and (max-width: 360px) 
+{
+  .main-div > .myform{
+   width: 70vw;
+  }
+}
+
+/* CSS Code for contactcard.js component */
+
+.Contactlist{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.container-div{
+  padding: 1rem;
+  width: 45vw;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.field-div{
+  position: relative;
+  margin-left: .2rem;
+}
+.container-div .Delete-button{
+  float: right;
+  padding: .4rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: rgba(44, 95, 224, 0.964);
+  color: #ffffff;
+  border-radius: .3rem;
+  border: none;
+  cursor: pointer;
+}
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: .5rem;
+}
+
+/* CSS Code for responsiveness of contactcard */
+
+@media screen and (max-width: 900px) 
+{
+  .container-div{
+    width: 55vw;
+  }
+}
+@media screen and (max-width: 600px) 
+{
+  .container-div{
+    width: 60vw;
+  }
+  .field-div > h4{
+    font-size: .9rem;
+  }
+  .field-div > p{
+    font-size: .7rem;
+  }
+}
+@media screen and (max-width: 500px) 
+{
+  .container-div .Delete-button{
+    padding: .2rem;
+    font-size: .8rem;
+  }
+}
+@media screen and (max-width: 430px) 
+{
+  .container-div{
+    width: 80vw;
+  }
+  .field-div > h4{
+    font-size: .8rem;
+  }
+}
+
